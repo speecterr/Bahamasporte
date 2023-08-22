@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carteira de Porte de Arma</title>
+    <link rel="stylesheet" href="carteira.css" />
+    <link rel="stylesheet" href="carteira2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="porte-civil">
+        <h2>Porte Civil</h2>
+      </a>
+
+      <div class="header-container">
+        <a href="teaser.html" class="porte-teaser">
+          <h2>Porte Teaser</h2>
+        </a>
+
+        <a href="oficial.html" class="porte-civil">
+          <h2>Porte Oficial</h2>
+        </a>
+      </div>
+    </header>
+
+    <div class="carteira-container">
+      <img
+        class="background"
+        src="./carteira/PORTEE444.png"
+        alt="Carteira de Porte de Arma"
+      />
+      <img id="uploadedImage" class="uploaded" src="#" alt="Imagem carregada" />
+      <span id="movableText" class="movable-text"></span>
+    </div>
+    <div class="button-container">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button onclick="loadImage()">Selecionar Imagem</button>
+      <input type="text" id="textInput" placeholder="Digite o texto aqui" />
+      <button onclick="fixText()">Gerar Texto</button>
+      <button onclick="clearAll()">Limpar Tudo</button>
+      <button onclick="downloadImage()">Download da Carteira</button>
+    </div>
+
+    <footer>
+      <p>
+        Desenvolvido por Barrydarsow - Nathan &copy; 2023. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="carteira.js"></script>
+  </body>
+</html>

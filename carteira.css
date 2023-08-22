@@ -1,0 +1,73 @@
+body {
+  /* ... outras propriedades ... */
+  min-height: 100vh; /* Defina uma altura mínima igual à altura da janela do navegador */
+  overflow-y: auto; /* Ativa a rolagem vertical quando o conteúdo excede a altura da janela */
+}
+
+.carteira-container {
+  position: relative;
+  display: inline-block;
+}
+
+.background {
+  width: 100%;
+}
+
+.uploaded {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 262px;
+  height: 345px;
+  cursor: move;
+  object-fit: cover;
+  display: none;
+}
+
+.movable-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: white;
+  cursor: move;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 24px; /* Adicionado para tornar o texto maior */
+}
+
+.text-area {
+  position: absolute;
+  border: 90px dashed #f7f7f6;
+  width: 50%;
+  height: 20%;
+  cursor: pointer;
+}
+
+.text-area.top {
+  top: 10%;
+  left: 25%;
+}
+
+.text-area.middle {
+  top: 40%;
+  left: 25%;
+}
+
+.text-area.bottom {
+  top: 70%;
+  left: 25%;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container input[type="file"],
+.button-container input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
